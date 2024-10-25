@@ -5,75 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liyon SV's Resume</title>
-    <!-- Link to your external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- OpenUI5 CSS theme -->
-    <link rel="stylesheet" href="https://openui5.hana.ondemand.com/resources/sap-ui-core.css">
-    <style>
-        /* Additional styles for better readability */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: #333;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="sapUiBody">
-    <header>
-        <h1>Liyon SV</h1>
-        <p>SAP Full Stack Developer</p>
-        <p>Sydney</p>
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" 
-            data-theme="dark" data-type="VERTICAL" data-vanity="liyon-sv" data-version="v1">
-            <a class="badge-base__link LI-simple-link" href="https://au.linkedin.com/in/liyon-sv?trk=profile-badge">LinkedIn</a>
-        </div>                      
-        <!-- GitHub link -->
-        <p><a href="https://github.com/leontoys">GitHub</a></p>
-        <a href="resume.html">View My Resume</a>
-    </header>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-light px-3 mb-3">
+        <a class="navbar-brand" href="#home"><i class="fas fa-home text-primary"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-pills ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/leontoys" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://au.linkedin.com/in/liyon-sv?trk=profile-badge" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p><strong>Front End:</strong> UI5, Fiori, JavaScript-ES6+</p>
-        <p><strong>Backend:</strong> ABAP RESTful Application Programming Model (RAP), CDS, EML, OData, Web Dynpro,
-            Workflow, OOPS ABAP</p>
-        <p><strong>Others:</strong> User Exits, BADIs, SAP Script, Smart Forms, Adobe Forms, ALV, BAPI</p>
-        <p><strong>Tools:</strong> SAP BTP, BAS, ABAP Development Tools (ADT) - Eclipse, VSCode</p>
-        <p><strong>Modules:</strong> Flexible Real Estate (REFX), SD, MM, PPM, BPC, PS, FI, and HR</p>
-    </section>
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>SAP Certified Development Associate - SAP Fiori Application Developer</li>
-            <li>SAP Certified Development Specialist - ABAP for SAP HANA 2.0</li>
-            <li>Scrimba JavaScript Developer Specialization</li>
-            <li>Google Data Analytics Professional Certificate</li>
-        </ul>
+    <!-- Home Section -->
+    <section id="home" class="bg-light d-flex align-items-center justify-content-center min-vh-100">
+        <div class="container text-center">
+            <header class="text-center">
+                <h1 class="display-4 text-primary">Liyon SV</h1>
+                <p class="lead">SAP Full Stack Developer</p>
+                <p>Sydney, Australia</p>
+                <p>Permanent Residency: Australia</p>
+            </header>
+        </div>
     </section>
 
-    <footer>
-        <hr>
-        <p>&copy; 2024 Liyon SV. All rights reserved.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light d-flex align-items-center justify-content-center min-vh-100 py-5">
+        <div class="container text-center">
+            <h2 class="text-primary">Skills</h2>
+            <ul class="list-unstyled">
+                <li><span class="fw-bold">Front End:</span> UI5, Fiori, JavaScript-ES6+</li>
+                <li><span class="fw-bold">Backend:</span> ABAP RAP, CAP, CDS, EML, OData, Web Dynpro, Workflow, OOPS ABAP</li>
+                <li><span class="fw-bold">Others:</span> User Exits, BADIs, SAP Script, Smart Forms, Adobe Forms, ALV, BAPI</li>
+                <li><span class="fw-bold">Tools:</span> SAP BTP, BAS, ADT - Eclipse, VSCode</li>
+                <li><span class="fw-bold">Modules:</span> REFX, SD, MM, PPM, BPC, PS, FI, HR</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light d-flex align-items-center justify-content-center min-vh-100 my-5 py-5">
+        <div class="container text-center">
+            <h2 class="text-primary">Experience</h2>
+            <article>
+                <h3 class="fw-bold">Senior Consultant</h3>
+                <p><span class="fw-bold">IQX Business Solutions, Sydney</span></p>
+                <p class="text-muted">(May 2022 - May 2024)</p>
+                <ul class="list-unstyled text-start">
+                    <li class="py-2 px-5">Developed SAP Fiori applications for RF Scanning implementation at Rheem, enhancing warehouse processes.</li>
+                    <li class="py-2 px-5">Introduced OneList at DCJ to streamline workflows and provide executives with an intuitive interface.</li>
+                    <li class="py-2 px-5">Implemented OneList at TfNSW, optimizing workflows and empowering executives with effective tools.</li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="fw-bold">Technology Lead</h3>
+                <p><span class="fw-bold">Infosys Limited, Sydney</span></p>
+                <p class="text-muted">(September 2015 - April 2022)</p>
+                <ul class="list-unstyled text-start">
+                    <li class="py-2 px-5">Developed programs for mass asset vesting, NRB calculation, and asset scrapping in FTM Fixed assets project.</li>
+                    <li class="py-2 px-5">Enhanced Indirect Activity Cycles report to include cost center and WBS Element details.</li>
+                    <li class="py-2 px-5">Modified upload programs to add template generation and validations.</li>
+                    <li class="py-2 px-5">Developed depreciation report linked to asset explorer transactions.</li>
+                    <li class="py-2 px-5">Implemented ABAP developments for P2P and PTD Change Request projects.</li>
+                    <li class="py-2 px-5">Enhanced Flex web Dynpro application with new validations using BADI.</li>
+                    <li class="py-2 px-5">Developed batch program for timely email reminders for Flex timesheet submissions.</li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="fw-bold">Technology Lead</h3>
+                <p><span class="fw-bold">Infosys Limited, Sydney</span></p>
+                <p class="text-muted">(October 2007 - August 2015)</p>
+                <ul class="list-unstyled text-start">
+                    <li class="py-2 px-5">Developed Adobe Forms for bulk printing of employee merit increase and bonus information.</li>
+                    <li class="py-2 px-5">Designed Interactive Adobe Form for Disability Management survey.</li>
+                    <li class="py-2 px-5">Implemented interfaces for employee demographic data synchronization between SAP and external systems.</li>
+                    <li class="py-2 px-5">Developed real-time calibration report for performance appraisals.</li>
+                    <li class="py-2 px-5">Led ABAP developments and unit testing for HR module implementations.</li>
+                    <li class="py-2 px-5">Analyzed business requirements, prepared specifications, and conducted performance testing.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="bg-light d-flex align-items-center justify-content-center min-vh-100 py-5">
+        <div class="container text-center">
+            <h2 class="text-primary">Certifications</h2>
+            <ul class="list-unstyled">
+                <li>SAP Certified Development Associate - SAP Fiori Application Developer</li>
+                <li>SAP Certified Development Specialist - ABAP for SAP HANA 2.0</li>
+                <li>Scrimba JavaScript Developer Specialization</li>
+                <li>Google Data Analytics Professional Certificate</li>
+            </ul>
+            <h2 class="text-primary">Degree</h2>
+            <ul class="list-unstyled">
+                <li>Bachelor of Technology in Mechanical Engineering</li>
+                <li>Government Engineering College, Thrissur (University of Calicut)</li>
+                <li>June 2003 - June 2007</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p class="mb-0">&copy; 2024 Liyon SV. All rights reserved.</p>
     </footer>
 
-    <!-- OpenUI5 Core library script -->
-    <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
