@@ -24,3 +24,6 @@ It showcases my skills, featured projects, contact information, and serves as a 
 
 ---
 
+## 📌 Live Site
+
+🔗 [leontoys.github.io](https://leontoys.github.io).
